@@ -6,7 +6,7 @@ public class Main {
 
         Calculator calc;
 
-        calc = new Calculator("red","texi");
+        calc = new Calculator("Casio","Blue");
 
         //calc.colour = "Hot Pink";
         //calc.brand = "Cassio";
@@ -16,8 +16,15 @@ public class Main {
         //calc2.colour = "Cardinal Red";
         //calc2.brand = "Texi";
 
-        System.out.println("Calculator is a: " + calc.brand + " of color " + calc.colour);
+        System.out.println("Calculator is a: " + calc.getBrand() + " of color " + calc.getColour());
         //System.out.println("Calculator is a: " + calc2.brand + " of color " + calc2.colour);
+
+        calc.setBrand("Texas");
+        System.out.println("new brand: " + calc.getBrand());
+
+
+
+
 
         int result = calc.add(66, 2);
         System.out.println(result);

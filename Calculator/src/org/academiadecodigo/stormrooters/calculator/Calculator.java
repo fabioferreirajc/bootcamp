@@ -2,8 +2,8 @@ package org.academiadecodigo.stormrooters.calculator;
 
 public class Calculator {
 
-    public String brand;
-    public String colour;
+    private String brand;
+    private String colour;
 
 
     public Calculator(String brand, String colour) {
@@ -15,7 +15,32 @@ public class Calculator {
 
     }
 
+    public String getBrand() {
+        return brand;
+    }
 
+    public String getColour() {
+        return colour;
+    }
+
+
+    public void setBrand( String brand) {
+        String[] brands = {"Casio","Texas"};
+        for (String validBrand: brands){
+            if (validBrand.equals(brand)){
+                this.brand=brand;
+            }
+        }
+    }
+
+    public void setColour(String colour) {
+        String[] colours = {"Red","Blue"};
+        for (String validColour: colours){
+            if (validColour.equals(colour)){
+                this.colour=colour;
+            }
+        }
+    }
 
     // public Calculator() {}
 
