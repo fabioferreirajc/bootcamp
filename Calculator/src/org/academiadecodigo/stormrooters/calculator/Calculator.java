@@ -6,9 +6,18 @@ public class Calculator {
     public String colour;
 
 
-    public Calculator(){
-        
+    public Calculator(String brand, String colour) {
+
+      this.brand = brand;
+      this.colour = colour;
+
+      //System.out.println("Calculator is a: " + brand + " of color " + colour);
+
     }
+
+
+
+    // public Calculator() {}
 
 
     public int add(int a, int b) {
@@ -16,7 +25,8 @@ public class Calculator {
         return a + b;
 
     }
-    public float add(float a, float b){
+
+    public float add(float a, float b) {
 
         return a + b;
 

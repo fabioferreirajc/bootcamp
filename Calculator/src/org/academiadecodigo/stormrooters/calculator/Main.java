@@ -6,18 +6,18 @@ public class Main {
 
         Calculator calc;
 
-        calc = new Calculator();
+        calc = new Calculator("red","texi");
 
-        calc.colour = "Hot Pink";
-        calc.brand = "Cassio";
+        //calc.colour = "Hot Pink";
+        //calc.brand = "Cassio";
 
 
-        Calculator calc2 = new Calculator();
-        calc2.colour = "Cardinal Red";
-        calc2.brand = "Texi";
+        //Calculator calc2 = new Calculator();
+        //calc2.colour = "Cardinal Red";
+        //calc2.brand = "Texi";
 
         System.out.println("Calculator is a: " + calc.brand + " of color " + calc.colour);
-        System.out.println("Calculator is a: " + calc2.brand + " of color " + calc2.colour);
+        //System.out.println("Calculator is a: " + calc2.brand + " of color " + calc2.colour);
 
         int result = calc.add(66, 2);
         System.out.println(result);
