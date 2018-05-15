@@ -30,6 +30,10 @@ public class Calculator {
             if (validBrand.equals(brand)){
                 this.brand=brand;
             }
+
+            else {
+                System.out.println("invalid");
+            }
         }
     }
 
@@ -45,17 +49,35 @@ public class Calculator {
     // public Calculator() {}
 
 
-    public int add(int a, int b) {
+    public double add(double a, double b) {
 
         return a + b;
 
     }
 
+    public double sub(double a, double b) {
+
+        return a - b;
+
+    }
+
+    public double mult(double a, double b) {
+
+        return a * b;
+
+    }
+
+    public double div(double a, double b) {
+
+        return a / b;
+
+    }
+/*
     public float add(float a, float b) {
 
         return a + b;
 
     }
-
+*/
 
 }
