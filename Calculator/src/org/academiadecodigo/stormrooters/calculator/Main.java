@@ -19,7 +19,7 @@ public class Main {
         //System.out.println("Calculator is a: " + calc.getBrand() + " of color " + calc.getColour());
         //System.out.println("Calculator is a: " + calc2.brand + " of color " + calc2.colour);
 
-        calc.setBrand("Texa");
+        calc.setBrand("Texas");
         System.out.println("new brand: " + calc.getBrand());
 
 

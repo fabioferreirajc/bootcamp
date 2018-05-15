@@ -31,18 +31,20 @@ public class Calculator {
                 this.brand=brand;
             }
 
-            else {
-                System.out.println("invalid");
             }
         }
     }
-
+    int counter=0;
     public void setColour(String colour) {
         String[] colours = {"Red","Blue"};
         for (String validColour: colours){
             if (validColour.equals(colour)){
                 this.colour=colour;
+                counter++;
             }
+            else{if (counter==2){
+                System.out.println("teste");
+            }}
         }
     }
 
