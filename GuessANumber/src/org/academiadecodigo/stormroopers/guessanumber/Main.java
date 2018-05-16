@@ -6,7 +6,7 @@ public class Main {
 
         Game newGame = new Game();
 
-        newGame.setMaxLimit(3);
+        newGame.setMaxLimit(30);
 
         Player newPlayer = new Player();
         Player newPlayer2 = new Player();
@@ -17,7 +17,6 @@ public class Main {
         Player[] players = {newPlayer, newPlayer2};
 
         newGame.setPlayers(players);
-
 
         newGame.start();
 

@@ -9,7 +9,7 @@ public class Game {
 
     public void start() {
 
-        int numberGame = (int) Math.floor(Math.random() * maxLimit);
+        int numberGame = Generator.generator(maxLimit);
 
         System.out.println("game picked: " + numberGame);
 
@@ -18,7 +18,7 @@ public class Game {
         boolean gameOn = true;
 
         while (gameOn) {
-            
+
             for (int i = 0; i < players.length; i++) {
 
                 response = players[i].pickANumber(maxLimit);
@@ -34,7 +34,7 @@ public class Game {
             }
         }
 
-        /*
+        /* Game for 1 player.
         while (gameOn) {
 
 

@@ -4,9 +4,9 @@ public class Player {
 
     private String name;
 
-    public int pickANumber(int number) {
+    public int pickANumber(int maxLimit) {
 
-        return (int) Math.floor(Math.random()*number);
+        return Generator.generator(maxLimit);
     }
 
     public String getName() {
