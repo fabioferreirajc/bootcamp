@@ -1,4 +1,4 @@
-package org.academiadecodigo.stormroopers.guessanumber;
+package org.academiadecodigo.stormrooters.guessanumber;
 
 public class Player {
 

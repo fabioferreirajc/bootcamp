@@ -13,7 +13,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
               <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
@@ -26,7 +26,7 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
@@ -35,7 +35,7 @@
         </entry>
       </file>
       <file leaf-file-name="Generator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Generator.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -48,7 +48,7 @@
         </entry>
       </file>
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Player.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
@@ -79,6 +79,7 @@
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Player.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Generator.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Main.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Generator.java" />
       </list>
     </option>
   </component>
@@ -92,8 +93,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="34" />
+    <option name="x" value="-207" />
+    <option name="y" value="28" />
     <option name="width" value="1744" />
     <option name="height" value="971" />
   </component>
@@ -116,19 +117,6 @@
               <item name="GuessANumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="GuessANumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GuessANumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuessANumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="academiadecodigo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GuessANumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuessANumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="academiadecodigo" type="462c0819:PsiDirectoryNode" />
-              <item name="guessanumber" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,16 +213,15 @@
       <option name="presentableId" value="Default" />
       <updated>1526398544498</updated>
       <workItem from="1526398548992" duration="11533000" />
-      <workItem from="1526458460332" duration="10953000" />
+      <workItem from="1526458460332" duration="11216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22486000" />
+    <option name="totallyTimeSpent" value="22749000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="34" width="1744" height="971" extended-state="0" />
-    <editor active="true" />
+    <frame x="181" y="66" width="1744" height="971" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -246,11 +233,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80698836" visible="true" weight="0.17431192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80698836" visible="true" weight="0.17431192" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.19301164" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -273,14 +260,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
@@ -291,14 +278,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Generator.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/guessanumber/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
