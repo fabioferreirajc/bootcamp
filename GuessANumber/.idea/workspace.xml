@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -225,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526398544498</updated>
       <workItem from="1526398548992" duration="11533000" />
-      <workItem from="1526458460332" duration="10578000" />
+      <workItem from="1526458460332" duration="10953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22111000" />
+    <option name="totallyTimeSpent" value="22486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="34" width="1744" height="971" extended-state="0" />
@@ -276,7 +276,7 @@
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormroopers/guessanumber/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
