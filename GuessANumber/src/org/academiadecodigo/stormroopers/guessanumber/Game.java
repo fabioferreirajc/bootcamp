@@ -13,17 +13,39 @@ public class Game {
 
         System.out.println("game picked: " + numberGame);
 
+        int response;
+
         boolean gameOn = true;
 
         while (gameOn) {
+            
+            for (int i = 0; i < players.length; i++) {
 
-            int response = players[0].pickANumber(maxLimit);
+                response = players[i].pickANumber(maxLimit);
+                System.out.println("Player " + players[i].getName() + " respond " + response);
+
+
+                if (numberGame == response) {
+                    System.out.println(players[i].getName() + " win the game");
+                    gameOn = false;
+                    break;
+
+                }
+            }
+        }
+
+        /*
+        while (gameOn) {
+
+
+            response = players[1].pickANumber(maxLimit);
 
             System.out.println("player picked: " + response);
 
+
             if (response == numberGame) {
 
-                System.out.println(players[0].getName() + " picked number " + response + " and was correct");
+                System.out.println(players[1].getName() + " picked number " + response + " and was correct");
 
                 gameOn = false;
 
@@ -31,10 +53,9 @@ public class Game {
             }
 
             System.out.println("please choose another number");
-        }
-
-
+            */
     }
+
 
     public void setPlayers(Player[] players) {
         this.players = players;

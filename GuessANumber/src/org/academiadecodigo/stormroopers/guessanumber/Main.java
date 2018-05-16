@@ -6,7 +6,7 @@ public class Main {
 
         Game newGame = new Game();
 
-        newGame.setMaxLimit(30);
+        newGame.setMaxLimit(3);
 
         Player newPlayer = new Player();
         Player newPlayer2 = new Player();
