@@ -1,4 +1,4 @@
-package org.academiadecodigo.stormroopers.guessanumber;
+package org.academiadecodigo.stormrooters.guessanumber;
 
 public class Main {
 
@@ -17,7 +17,6 @@ public class Main {
         Player[] players = {newPlayer, newPlayer2};
 
         newGame.setPlayers(players);
-
 
         newGame.start();
 
