@@ -2,7 +2,8 @@ package org.academiadecodigo.stormrooters.snackbar;
 
 public class Client {
 
-    //private String clientchoice;
+    private String name;
+
 
     public Drink clientchoice (Drink choice){
         return choice;
@@ -14,5 +15,11 @@ public class Client {
 
     }
 
+    public String getName() {
+        return this.name;
+    }
 
+    public void setName(String clientName) {
+        this.name= clientName;
+    }
 }

@@ -13,7 +13,7 @@ public class Main {
                 new Player("D"),
                 new Player("E"),
                 new Player("F"),
-                new Player("Ga nbozino")
+                new Player("Ganbozino")
 
         };
 

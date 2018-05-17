@@ -22,6 +22,9 @@ public enum Drink {
         return this.price;
     }
 
+
+
+ Client client;
     public static void showMenu() {
 
         System.out.println("DRINKS MENU");
