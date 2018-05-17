@@ -1,7 +1,5 @@
 package org.academiadecodigo.stormrooters.snackbar;
 
-import java.util.*;
-
 public enum Drink {
 
     COCACOLA("Coca Cola", 2.20),
@@ -25,15 +23,11 @@ public enum Drink {
     }
 
     public static void showMenu() {
-    /*
-        System.out.println(Drink.COCACOLA.getName() + Drink.COCACOLA.getPrice());
-        System.out.println(Drink.JUICE.getName() + Drink.JUICE.getPrice());
-        System.out.println(Drink.WATER.getName() + Drink.WATER.getPrice());
-    }*/
-    System.out.println("DRINKS MENU");
-        for (Drink items : Drink.values()) {
 
-            System.out.println(items.getName()+ items.getPrice());
+        System.out.println("DRINKS MENU");
+
+        for (Drink items : Drink.values()) {
+            System.out.println( "   " + items.getName()+ " at "+ items.getPrice()+" €");
         }
 
     }
