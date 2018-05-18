@@ -1,4 +1,4 @@
-package org.academiadecodigo.stormrooters.moneyinthebank;
+public class bankpackage org.academiadecodigo.stormrooters.moneyinthebank;
 
 public class Bank {
 
@@ -26,3 +26,4 @@ public class Bank {
 
 
 }
+
