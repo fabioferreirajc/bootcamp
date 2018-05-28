@@ -1,21 +1,17 @@
 package org.academiadecodigo.stormrooters.sniper;
 
-public abstract class  Enemy extends GameObject {
+import javax.security.auth.Destroyable;
+
+public abstract class Enemy extends GameObject implements Destroyable {
 
     private int health;
 
     private boolean isDead;
 
 
-    public Enemy () {
-        this.health=100;
-        this.isDead=false;
-    }
-
-
-
-    public int getHealth () {
-        return health;
+    public Enemy() {
+        this.health = 100;
+        this.isDead = false;
     }
 
 
@@ -25,12 +21,17 @@ public abstract class  Enemy extends GameObject {
 
     public void setDead() {
         isDead = true;
+        System.out.println("Dead Target");
     }
 
-    public void hit (int hit){
-        this.health-=hit;
-        if(health<=0) {
-            isDead();
+    public void hit(int hit) {
+        this.health -= hit;
+        if (health <= 0) {
+            setDead();
         }
+    }
+
+    public int getHealth() {
+        return health;
     }
 }

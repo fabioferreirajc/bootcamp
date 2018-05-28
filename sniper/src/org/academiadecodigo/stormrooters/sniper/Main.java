@@ -9,12 +9,6 @@ public class Main {
 
         System.out.println("NUMBER OF GAME OBJECTS  " + newGame.getGameObjectsSize());
 
-        ArmouredEnemy armouredEnemy = new ArmouredEnemy();
-        SoldierEnemy soldierEnemy = new SoldierEnemy();
-        Tree tree = new Tree();
-
-
-
         newGame.start();
     }
 }

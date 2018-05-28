@@ -7,7 +7,6 @@ public class SniperRifle {
     private String name;
 
 
-
     public SniperRifle(String name) {
         this.bulletDamage = 40;
         this.name = name;
@@ -15,19 +14,19 @@ public class SniperRifle {
     }
 
 
-    public int shot(a) {
-        System.out.println("shoot!!");
-        return a.getHealth()-bulletDamage;
+    public void shoot(Enemy enemy) {
+
+
+        int sniperAccuracy = (int) (Math.random() * 9);
+
+        if (sniperAccuracy < 1) {
+            System.out.println("Target missed");
+            return;
         }
 
-    public int getBulletDamage() {
-        return bulletDamage;
+        enemy.hit(bulletDamage);
     }
 
-    //public void shootEnemy (Enemy) {
-    //  probabilityGenerator = (int) (Math.random()*3);
 
-
-    // }
 
 }
