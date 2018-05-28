@@ -1,4 +1,12 @@
 package org.academiadecodigo.stormrooters.sniper;
 
-public class Destroyable {
+public interface Destroyable {
+
+    public abstract void hit (int hit);
+    public abstract boolean isDestroyed();
+
+
+
+
+
 }
