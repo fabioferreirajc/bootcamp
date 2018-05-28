@@ -6,6 +6,7 @@ public class Main {
 
         MagicLamp magicLamp = new MagicLamp (3);
         magicLamp.rub();
+        magicLamp.rub();
 
     }
 }

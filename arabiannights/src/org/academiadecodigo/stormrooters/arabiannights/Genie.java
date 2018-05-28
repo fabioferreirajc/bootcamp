@@ -13,8 +13,6 @@ public class Genie {
 
 
 
-
-
     public void grantAWish() {
         numberOfWishes-=1;
         System.out.println("1 wish granted!!");

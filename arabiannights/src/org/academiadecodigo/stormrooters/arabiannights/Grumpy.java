@@ -8,12 +8,16 @@ public class Grumpy extends Genie {
 
     private boolean notwished=true;
 
+
+
+
     @Override
 
     public void grantAWish() {
 
         if (notwished) {
             super.grantAWish();
+            System.out.println("Wish granted!!");
         }
 
     }
