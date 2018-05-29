@@ -33,8 +33,9 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
      */
     public SimpleGfxGridPosition(int col, int row, SimpleGfxGrid grid){
         super(col, row, grid);
+        rectangle=new Rectangle(1,1,5,5);
+        rectangle.draw();
 
-        
         //throw new UnsupportedOperationException();
     }
 
