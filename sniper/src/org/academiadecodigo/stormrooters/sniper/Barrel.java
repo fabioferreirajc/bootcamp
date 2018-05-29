@@ -4,9 +4,14 @@ import javax.security.auth.Destroyable;
 
 public class Barrel implements Destroyable {
 
-    BarrelType[] barrels = BarrelType.values();
-    private int currentDamage=0
+    private BarrelType barrelType;
+    private int currentDamage=0;
     private boolean destroyed;
+
+    public Barrel () {
+        barrelType= BarrelType.values()[(int)Math.random()*(BarrelType.values().length+1)];
+    }
+
 
 
     public void setDestroyed() {
@@ -16,7 +21,7 @@ public class Barrel implements Destroyable {
 
     public void hit(int hit) {
         this.currentDamage += hit;
-        if (currentDamage <= ) {
+        if (currentDamage >= barrelType.getMaxDamage() ) {
             setDestroyed();
         }
     }

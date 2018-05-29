@@ -43,7 +43,7 @@ public class Game {
             if (gameObject instanceof Tree) {
             }
 
-            if (gameObject instanceof Enemy) {
+            if (gameObject instanceof Destroyable) {
                 Enemy enemy = (Enemy) gameObject;
 
                 while (!enemy.isDead()) {
@@ -60,7 +60,5 @@ public class Game {
         return gameObjects.length;
     }
 
-    public GameObject[] getGameObject() {
-        return gameObjects;
-    }
+
 }
