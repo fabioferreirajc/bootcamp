@@ -22,7 +22,16 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
      */
     public SimpleGfxGridPosition(SimpleGfxGrid grid) {
         super((int) (Math.random() * grid.getCols()), (int) (Math.random() * grid.getRows()), grid);
-        throw new UnsupportedOperationException();
+
+
+
+        this.simpleGfxGrid = grid;
+
+        rectangle = new Rectangle(grid.columnToX(getCol()), grid.rowToY(getRow()), grid.getCellSize(), grid.getCellSize());
+        //rectangle.draw();
+
+
+        //throw new UnsupportedOperationException();
     }
 
     /**
