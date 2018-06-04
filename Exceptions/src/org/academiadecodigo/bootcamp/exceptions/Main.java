@@ -7,8 +7,16 @@ public class Main {
 
         FileManager fileManager= new FileManager(3);
         fileManager.setLogin();
-        fileManager.createFile("s");
 
 
+        try {
+            fileManager.createFile("a");
+            fileManager.createFile("b");
+            //fileManager.createFile("c");
+           // fileManager.createFile("d");
+
+        } catch (NotEnoughSpaceException space) {
+            System.out.println(space.getMessage());
+        }
     }
 }

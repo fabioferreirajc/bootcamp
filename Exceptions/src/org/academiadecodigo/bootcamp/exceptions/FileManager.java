@@ -5,10 +5,12 @@ public class FileManager {
     private boolean login = false;
 
     private File[] files;
+    private int numberOfFiles;
 
     public FileManager(int numberOfFiles) {
-        File[] files = new File[numberOfFiles];
+        files = new File[numberOfFiles];
         System.out.println("Number of files " + numberOfFiles);
+        this.numberOfFiles = numberOfFiles;
     }
 
 
@@ -23,24 +25,37 @@ public class FileManager {
         System.out.println("Logout");
     }
 
-
+    /*
     public File getFile(String fileName) {
         for (int i = 0; i < files.length; i++) {
             if((files[i].getName()).equals(fileName)) {
-
+               return null;
             }
         }
 
     }
+    */
 
+    public void createFile(String fileName) throws NotEnoughSpaceException {
+        if (files[numberOfFiles] != null) {
+            throw new NotEnoughSpaceException();
+        }
 
-    public void createFile(String fileName) {
-        for(int i=0;i<files.length;i++) {
-            files[i] = new File(fileName);
+        for (int i = 0; i < files.length; i++) {
+
+            if (files[i] == null) {
+
+                files[i] = new File(fileName);
+                System.out.println(fileName);
+                break;
+            }
 
         }
+
+
     }
 
 }
+
 
 

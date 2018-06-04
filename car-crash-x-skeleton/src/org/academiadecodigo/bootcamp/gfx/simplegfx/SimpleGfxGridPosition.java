@@ -73,9 +73,9 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
     @Override
     public void moveInDirection(GridDirection direction, int distance) {
         super.moveInDirection(direction, distance);
-        int movX = simpleGfxGrid.columnToX(getCol());
-        int movY = simpleGfxGrid.rowToY(getRow());
-        rectangle.translate(movX - rectangle.getX(), movY - rectangle.getY());
+        int x = simpleGfxGrid.columnToX(getCol());
+        int y = simpleGfxGrid.rowToY(getRow());
+        rectangle.translate(x - rectangle.getX(), y - rectangle.getY());
 
         //throw new UnsupportedOperationException();
     }

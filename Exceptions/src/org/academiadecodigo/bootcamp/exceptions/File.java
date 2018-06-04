@@ -2,7 +2,7 @@ package org.academiadecodigo.bootcamp.exceptions;
 
 public class File {
 
-    String fileName;
+    private String fileName;
 
     public File (String fileName){
         this.fileName=fileName;
