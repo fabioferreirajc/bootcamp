@@ -140,17 +140,20 @@ public class LinkedList<T> implements Iterable<T> {
 
 
 
+
         @Override
         public boolean hasNext() {
-            if (head==null) {
+            if (==null) {
+                System.out.println("!!false");
                 return false;
             }
+            System.out.println("!! true");
             return true ;
         }
 
         @Override
         public T next() {
-
+            return null;
 
         }
 

@@ -104,7 +104,7 @@ public class SimpleGfxGrid implements Grid {
      */
     @Override
     public GridPosition makeGridPosition() {
-        GridPosition gridPosition= new SimpleGfxGridPosition(this);
+        GridPosition gridPosition = new SimpleGfxGridPosition(this);
         return gridPosition;
         //throw new UnsupportedOperationException();
     }
@@ -114,7 +114,7 @@ public class SimpleGfxGrid implements Grid {
      */
     @Override
     public GridPosition makeGridPosition(int col, int row) {
-        return  new SimpleGfxGridPosition(col,row, this);
+        return new SimpleGfxGridPosition(col, row, this);
     }
 
     /**
@@ -124,8 +124,8 @@ public class SimpleGfxGrid implements Grid {
      * @return y pixel value
      */
     public int rowToY(int row) {
-        return row * getCellSize()+PADDING;
-       // throw new UnsupportedOperationException();
+        return row * getCellSize() + PADDING;
+        // throw new UnsupportedOperationException();
     }
 
     /**
@@ -135,7 +135,7 @@ public class SimpleGfxGrid implements Grid {
      * @return x pixel value
      */
     public int columnToX(int column) {
-        return column * getCellSize()+PADDING;
+        return column * getCellSize() + PADDING;
         //throw new UnsupportedOperationException();
     }
 }
