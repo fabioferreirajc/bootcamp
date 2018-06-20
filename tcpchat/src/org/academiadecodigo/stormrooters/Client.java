@@ -16,13 +16,14 @@ public class Client {
 
     }
 
-    private String serverIp = "localhost";
-    private int serverPort = 8001;
 
     private Socket clientSocket;
 
     public void send() {
         try {
+            String serverIp = "localhost";
+            int serverPort = 8001;
+
             clientSocket = new Socket(serverIp, serverPort);
 
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -33,7 +34,7 @@ public class Client {
                 String messageKeyb = getUserInput();
 
                 if (messageKeyb.equals("close")) {
-                    clientSocket.close();
+
                     break;
                 }
 
@@ -55,8 +56,6 @@ public class Client {
     private String getUserInput() {
 
         Scanner scanner = new Scanner(System.in);
-
-
         return scanner.nextLine();
 
     }

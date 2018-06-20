@@ -19,11 +19,12 @@ public class Server {
 
     private int listningPort = 8001;
     private Socket clientSocket;
+    private ServerSocket serverSocket;
 
 
     public void receive() {
         try {
-            ServerSocket serverSocket = new ServerSocket(listningPort);
+            serverSocket = new ServerSocket(listningPort);
             clientSocket = serverSocket.accept();
 
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -33,11 +34,12 @@ public class Server {
 
                 String messageFromClient = in.readLine();
 
-                if (messageFromClient == null) {
+                if (messageFromClient.equals("close")) {
                     System.out.println("Client down");
-                    serverSocket.close();
+                    clientSocket.close();
                     break;
                 }
+
 
                 System.out.println("CLIENT " + messageFromClient);
                 String messageKeyb = getUserInput();
@@ -64,9 +66,13 @@ public class Server {
 
     private void close() {
         try {
-            clientSocket.close();
+            serverSocket.close();
+            receive();
         } catch (IOException e) {
             System.err.println(e.getMessage());
+
         }
     }
+
+
 }
