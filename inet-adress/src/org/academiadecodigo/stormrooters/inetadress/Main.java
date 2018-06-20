@@ -6,18 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        String host = getUserInput();
+        String host = getUserInput();
 
         Inet inet = new Inet();
 
-        inet.local();
+        //inet.local();
 
-        inet.getIpAndTest("www.wikipedia.org",100);
+        inet.getIpAndTest(host,100);
 
     }
 
 
-    /*
+
 
     private static String getUserInput() {
 
@@ -26,7 +26,7 @@ public class Main {
         System.out.println(question);
         return scanner.nextLine();
 
-    }*/
+    }
 
 
 }

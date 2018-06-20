@@ -2,21 +2,34 @@ package org.academiadecodigo.stormrooters;
 
 import java.io.IOException;
 import java.net.*;
+import java.util.Scanner;
 
 public class Client {
 
     public static void main(String[] args) {
 
         Client client = new Client();
-        client.send("teste");
+        String messageKeyb = getUserInput();
+        client.send(messageKeyb);
     }
 
 
-    String hostName = "192.168.1.15";
+    private String hostName = "192.168.1.15";
+
+
+
     int portNumber = 5555;
 
     byte[] sendBuffer;
 
+    private static String getUserInput() {
+
+        Scanner scanner = new Scanner(System.in);
+        String question = "?";
+        System.out.println(question);
+        return scanner.nextLine();
+
+    }
 
     public void send(String message) {
         try {
@@ -35,10 +48,9 @@ public class Client {
             DatagramPacket recvPacket = new DatagramPacket(recvBuffer, recvBuffer.length);
             socket.receive(recvPacket);
 
-            String returnetMessage= new String (recvBuffer);
+            String returnetMessage = new String(recvBuffer);
 
             System.out.println(returnetMessage.trim());
-
 
 
         } catch (SocketException se) {
