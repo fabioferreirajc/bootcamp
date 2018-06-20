@@ -24,7 +24,7 @@
       <file leaf-file-name="Inet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/inetadress/Inet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="324">
               <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -195,6 +195,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="86" y="23" width="1570" height="986" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -242,7 +243,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stormrooters/inetadress/Inet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="324">
           <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />

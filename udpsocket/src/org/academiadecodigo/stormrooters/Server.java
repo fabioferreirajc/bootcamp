@@ -41,10 +41,10 @@ public class Server {
 
 
         } catch (SocketException se) {
-            se.getStackTrace();
+            se.printStackTrace();
 
         } catch (IOException io) {
-            io.getMessage();
+            io.printStackTrace();
         }
     }
 

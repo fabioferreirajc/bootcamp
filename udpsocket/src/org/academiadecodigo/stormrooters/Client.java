@@ -35,15 +35,17 @@ public class Client {
             DatagramPacket recvPacket = new DatagramPacket(recvBuffer, recvBuffer.length);
             socket.receive(recvPacket);
 
-            System.out.println(new String (recvPacket.getData()).trim());
+            String returnetMessage= new String (recvBuffer);
+
+            System.out.println(returnetMessage.trim());
 
 
 
         } catch (SocketException se) {
-            se.getMessage();
+            se.printStackTrace();
 
         } catch (IOException ioe) {
-            ioe.getMessage();
+            ioe.printStackTrace();
         }
 
 
