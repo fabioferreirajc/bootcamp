@@ -22,19 +22,19 @@ public class Client {
     public void send() {
         try {
             String serverIp = "localhost";
-            int serverPort = 8001;
+            int serverPort = 8002;
 
             clientSocket = new Socket(serverIp, serverPort);
 
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-            while (true) {
+            while (!clientSocket.isClosed()) {
 
                 String messageKeyb = getUserInput();
 
                 if (messageKeyb.equals("close")) {
-
+                    out.println(messageKeyb);
                     break;
                 }
 

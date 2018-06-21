@@ -17,7 +17,7 @@ public class Server {
 
     }
 
-    private int listningPort = 8001;
+    private int listningPort = 8002;
     private Socket clientSocket;
     private ServerSocket serverSocket;
 
@@ -26,6 +26,7 @@ public class Server {
         try {
             serverSocket = new ServerSocket(listningPort);
             clientSocket = serverSocket.accept();
+            System.out.println("New client connected.");
 
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
