@@ -6,6 +6,8 @@ import org.academiadecodigo.bootcamp.utils.Helper;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class WebServer {
 
@@ -17,32 +19,42 @@ public class WebServer {
     public WebServer(int port) {
         this.port = port;
     }
-    private Socket socket;
+
+    ExecutorService cachedPool;
 
     public void start() {
 
         try {
 
             ServerSocket serverSocket = new ServerSocket(port);
+            cachedPool = Executors.newCachedThreadPool();
 
             while (true) {
 
                 System.out.println("Waiting for connection");
-                socket = serverSocket.accept();
-                Thread thread= new Thread(new ServerWorker());
+                Socket socket = serverSocket.accept();
 
-                System.out.println(thread.getName() +"  New client connected");
-
-                thread.start();
+                cachedPool.submit(new ServerWorker(socket));
 
 
-                System.out.println(thread.getName());
-                System.out.println(thread.getId());
+
+
+                //Thread thread= new Thread(new ServerWorker());
+
+                //System.out.println(thread.getName() +"  New client connected");
+
+                //thread.start();
+
+
+                //System.out.println(thread.getName());
+                //System.out.println(thread.getId());
 
             }
 
         } catch (IOException e) {
             System.err.println("server failed to start at port: " + port);
+        } finally {cachedPool.shutdown();
+
         }
     }
 
@@ -89,7 +101,7 @@ public class WebServer {
         } finally {
 
             try {
-
+                System.out.println("Client served");
                 socket.close();
 
             } catch (IOException e) {
@@ -108,6 +120,15 @@ public class WebServer {
 
 
     private class ServerWorker implements Runnable {
+
+        private Socket socket;
+
+        public ServerWorker(Socket socket) {
+            this.socket=socket;
+
+        }
+
+
         @Override
         public void run() {
             serveClient(socket);
