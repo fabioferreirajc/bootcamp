@@ -13,93 +13,78 @@ public class Client {
 
     public static void main(String[] args) throws IOException {
         Client client = new Client();
-        Socket clientSocket = new Socket("localhost", 8080);
-
-        PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-
-        Scanner scanner = new Scanner(System.in);
-
-        //ExecutorService fixedPool = Executors.newFixedThreadPool(2);
-        //fixedPool.submit(new Send(clientSocket));
-
-        Thread sendThread = new Thread(new Send(clientSocket, out, in));
+        client.startClient();
 
     }
 
-    private class Send implements Runnable {
+
+    public void startClient() throws IOException {
+
+        Socket clientSocket = new Socket("localhost", 8081);
+
+        ExecutorService fixedPool = Executors.newFixedThreadPool(2);
+        fixedPool.submit(new Sender(clientSocket));
+        fixedPool.submit(new Reader(clientSocket));
+
+    }
+
+    private String getUserInput() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+
+
+    private class Sender implements Runnable {
         Socket clientSocket;
         PrintWriter out;
-        BufferedReader in;
 
-        public Send(Socket clientsocket, PrintWriter out, BufferedReader in) {
+        public Sender(Socket clientsocket) {
+
             this.clientSocket = clientsocket;
-            this.out = out;
-            this.in = in;
+            try {
+                out = new PrintWriter(clientSocket.getOutputStream(), true);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         @Override
         public void run() {
-            String message = getUserInput();
-            out.println(message);
-            System.out.println(message);
+            while (true) {
+
+                String message = getUserInput();
+                out.println(message);
+            }
         }
     }
 
 
-    private class Read implements Runnable {
+    private class Reader implements Runnable {
         Socket clientSocket;
-        PrintWriter out;
         BufferedReader in;
 
-        public Read(Socket clientsocket, PrintWriter out, BufferedReader in) {
+        public Reader(Socket clientsocket) {
             this.clientSocket = clientsocket;
-            this.out = out;
-            this.in = in;
+            try {
+                in= new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         @Override
         public void run() {
             String messageFromServer;
             try {
+                while(true) {
                 messageFromServer = in.readLine();
-                System.out.println(messageFromServer);
+                System.out.println(messageFromServer);}
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
         }
     }
-    /*
-    private class Send implements Runnable {
 
-        private Socket clientSocket;
-        PrintWriter out;
-        BufferedReader in;
 
-        public Send(Socket clientsocket) {
-            this.clientSocket = clientsocket;
-            try {
-                out = new PrintWriter(clientSocket.getOutputStream(), true);
-                in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-
-        @Override
-        public void run() {
-            while (true) {
-                String clientMessage = getUserInput();
-                out.println(clientMessage);
-            }
-        }
-    }
-    */
-
-    private String getUserInput() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
-    }
 }

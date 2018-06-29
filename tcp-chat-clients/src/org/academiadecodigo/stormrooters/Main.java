@@ -5,6 +5,5 @@ public class Main {
         Server server = new Server();
         server.startServer();
 
-        Client client = new Client();
     }
 }
