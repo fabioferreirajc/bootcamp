@@ -33,7 +33,6 @@ public class WebServer {
 
                 System.out.println("Waiting for connection");
                 Socket socket = serverSocket.accept();
-
                 cachedPool.submit(new ServerWorker(socket));
 
 
