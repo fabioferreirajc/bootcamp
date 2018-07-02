@@ -12,12 +12,12 @@ public class WithHashMap {
 
         Prompt prompt = new Prompt(System.in, System.out);
 
-        String[] menuOptions = {"Login", "Register", "Exit"};
+        String[] menuOptions = {"Login", "Register","Delete", "Exit"};
         MenuInputScanner scanner = new MenuInputScanner(menuOptions);
         scanner.setMessage("Choose: ");
 
-        HashMap<String,String> userAndPass = new HashMap();
-        userAndPass.put("joao","pass");
+        HashMap<String, String> userAndPass = new HashMap();
+        userAndPass.put("joao", "pass");
 
         int answerMenu = prompt.getUserInput(scanner);
 
@@ -27,15 +27,18 @@ public class WithHashMap {
                 break;
 
             case 2:
-                register(prompt,userAndPass);
-                login(prompt,userAndPass);
+                register(prompt, userAndPass);
+                login(prompt, userAndPass);
                 break;
 
             case 3:
+                delete(prompt,userAndPass);
+                break;
+
+            case 4:
                 System.out.println("logout");
                 break;
         }
-
 
 
     }
@@ -53,7 +56,7 @@ public class WithHashMap {
         passwordQuestion.setError("Wrong password!");
         String passReg = prompt.getUserInput(passwordQuestion);
 
-        userAngPass.put(nameReg,passReg);
+        userAngPass.put(nameReg, passReg);
         System.out.println(userAngPass.entrySet());
 
     }
@@ -73,11 +76,29 @@ public class WithHashMap {
         String pass = prompt.getUserInput(passwordQuestion);
 
 
-        if (userAndPass.containsKey(name)&&userAndPass.containsValue(pass)) {
-        System.out.println("Username verified.");
-        System.out.println("Password verified.");
+        if (userAndPass.containsKey(name) && userAndPass.containsValue(pass)) {
+            System.out.println("Username verified.");
+            System.out.println("Password verified.");
 
         }
 
     }
+
+    private static void delete(Prompt prompt, HashMap userAndPass) {
+
+        StringInputScanner userNameQuestion = new StringInputScanner();
+        userNameQuestion.setMessage("Username: ");
+        String name = prompt.getUserInput(userNameQuestion);
+        userNameQuestion.setError("Wrong username!");
+
+        userAndPass.remove(name);
+
+        System.out.println(userAndPass.entrySet());
+
+
+
+    }
+
+
+
 }
