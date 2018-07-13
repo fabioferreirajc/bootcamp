@@ -10,7 +10,7 @@ public class HelloWorld {
         GUIScreen gui = TerminalFacade.createGUIScreen();
         gui.getScreen().startScreen();
 
-        Window window = new Window("hello Wolrd");
+        Window window = new Window("hello World");
         gui.showWindow(window);
 
         gui.getScreen().stopScreen();
