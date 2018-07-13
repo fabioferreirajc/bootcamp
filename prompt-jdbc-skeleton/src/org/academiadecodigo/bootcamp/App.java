@@ -5,6 +5,8 @@ import org.academiadecodigo.bootcamp.controller.MainController;
 import org.academiadecodigo.bootcamp.controller.UserDetailsController;
 import org.academiadecodigo.bootcamp.controller.UserListController;
 import org.academiadecodigo.bootcamp.model.User;
+import org.academiadecodigo.bootcamp.persistance.ConnectionManager;
+import org.academiadecodigo.bootcamp.service.JdbcUserService;
 import org.academiadecodigo.bootcamp.service.MockUserService;
 import org.academiadecodigo.bootcamp.service.UserService;
 import org.academiadecodigo.bootcamp.utils.Security;
@@ -16,6 +18,13 @@ import org.academiadecodigo.bootcamp.view.UserListView;
 public class App {
 
     public static void main(String[] args) {
+
+        ConnectionManager connectionManager= new ConnectionManager();
+        JdbcUserService jdbcUserService= new JdbcUserService();
+
+
+        jdbcUserService.setDbConnection(connectionManager.getConnection());
+        jdbcUserService.count();
 
         LoginController loginController = new LoginController();
         MainController mainController = new MainController();
