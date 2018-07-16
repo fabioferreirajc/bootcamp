@@ -15,16 +15,30 @@ import org.academiadecodigo.bootcamp.view.MainView;
 import org.academiadecodigo.bootcamp.view.UserDetailsView;
 import org.academiadecodigo.bootcamp.view.UserListView;
 
+import java.sql.Connection;
+import java.util.LinkedList;
+import java.util.List;
+
 public class App {
 
     public static void main(String[] args) {
 
         ConnectionManager connectionManager= new ConnectionManager();
-        JdbcUserService jdbcUserService= new JdbcUserService();
+
+        UserService userService= new JdbcUserService(connectionManager.getConnection());
 
 
-        jdbcUserService.setDbConnection(connectionManager.getConnection());
-        jdbcUserService.count();
+
+
+        userService.add(new User("joaquim","js@mail.com","academia3", "joaquim",
+                "silva","922123432"));
+
+        userService.add(new User("mestre","m@mail.com","academia5", "mestre",
+                "mestre","922123432"));
+
+        userService.add(new User("sergio","js@mail.com","jkgdcfoahsfcouagtfapkjnfiasygfdajfbaiuyfgeasg", "joaquim", "silva", "123"));
+
+        userService.count();
 
         LoginController loginController = new LoginController();
         MainController mainController = new MainController();
@@ -37,13 +51,6 @@ public class App {
         Prompt prompt = new Prompt(System.in, System.out);
 
 
-        UserService userService = new MockUserService();
-        userService.add(new User("jorge", "mestre@academiadecodigo.org", Security.getHash("academiadecodigo"),
-                "Jorge", "Antunes", "912345678"));
-        userService.add(new User("soraia", "so@academiadecodigo.org", Security.getHash("academiadecodigo"),
-                "Soraia", "Veríssimo", "966666666"));
-        userService.add(new User("sid", "elcid@academiadecodigo.org", Security.getHash("academiadecodigo"),
-                "Sidónio", "Câmara", "934567890"));
 
         // Wire login controller and view
         loginView.setPrompt(prompt);
@@ -75,6 +82,6 @@ public class App {
         // Start APP
         loginController.init();
 
-
+        connectionManager.close();
     }
 }
