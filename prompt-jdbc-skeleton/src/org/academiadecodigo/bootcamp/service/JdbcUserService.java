@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.service;
 
 import org.academiadecodigo.bootcamp.model.User;
+import org.academiadecodigo.bootcamp.utils.Security;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -14,9 +15,8 @@ public class JdbcUserService implements UserService {
         this.dbConnection = connection;
     }
 
-    public Connection getDbConnection() {
-        return dbConnection;
-    }
+
+
 
     @Override
     public boolean authenticate(String username, String password) {
@@ -45,7 +45,7 @@ public class JdbcUserService implements UserService {
     @Override
     public void add(User user) {
         String userNameTry = user.getUsername();
-        String userPassword = user.getPassword();
+        String userPassword = Security.getHash(user.getPassword());
         String userEmail = user.getEmail();
         String userFirstName = user.getFirstName();
         String userLastName = user.getLastName();
