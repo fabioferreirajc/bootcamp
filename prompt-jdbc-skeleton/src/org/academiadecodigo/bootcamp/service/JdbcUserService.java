@@ -27,7 +27,7 @@ public class JdbcUserService implements UserService {
             PreparedStatement statment = dbConnection.prepareStatement(query);
 
             statment.setString(1, username);
-            statment.setString(2, password);
+            statment.setString(2, Security.getHash(password));
 
             ResultSet resultSet = statment.executeQuery();
 

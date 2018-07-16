@@ -36,7 +36,7 @@ public class App {
         userService.add(new User("mestre","m@mail.com", "academia5", "mestre",
                 "mestre","922123432"));
 
-        userService.add(new User("sergio","js@mail.com","jkgdcfoahsfcouagtfapkjnfiasygfdajfbaiuyfgeasg", "joaquim", "silva", "123"));
+        userService.add(new User("paulo","js@mail.com","paulo", "joaquim", "silva", "123"));
 
         userService.count();
 
