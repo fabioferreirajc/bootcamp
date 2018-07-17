@@ -134,9 +134,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="496" />
-    <option name="y" value="75" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="315" />
+    <option name="y" value="23" />
     <option name="width" value="1062" />
     <option name="height" value="986" />
   </component>
@@ -323,15 +323,16 @@
       <updated>1531499149015</updated>
       <workItem from="1531499161019" duration="5868000" />
       <workItem from="1531729463450" duration="23825000" />
-      <workItem from="1531818286849" duration="1969000" />
+      <workItem from="1531818286849" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31662000" />
+    <option name="totallyTimeSpent" value="32182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="496" y="75" width="1062" height="986" extended-state="0" />
+    <frame x="315" y="23" width="1062" height="986" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -343,10 +344,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" weight="0.26467663" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49893504" visible="true" weight="0.3295838" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49893504" visible="true" weight="0.3295838" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.58441556" visible="true" weight="0.30392158" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.58441556" visible="true" weight="0.30392158" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.3127451" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
