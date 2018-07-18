@@ -4,7 +4,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity
+//@Entity
 @Table(name = "user") // model the database user table
 public class User {
 
@@ -87,4 +87,10 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return getId()+" / "+getName() + " / " + getEmail() + " / " + getCreationTime()+ " / " + getUpdateTime() + " / " +getVersion();
+    }
+
 }

@@ -1,4 +1,3 @@
-import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
@@ -7,27 +6,35 @@ public class Main {
 
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistenceUnit");
-        EntityManager em = emf.createEntityManager();
 
-
-        //System.out.println("Result: " +
-        //        em.createNativeQuery("select 1 + 1").getSingleResult());
-
+        UserService userService = new UserService();
+        userService.setEmf(emf);
 
         User user = new User();
-
-        em.getTransaction().begin();
-
-        em.persist(user);
         user.setName("fabio");
         user.setEmail("ff@mail.com");
 
-        em.getTransaction().commit();
+        System.out.println("id before merge: " + user.getId());
+
+        userService.save(user);
+
+        System.out.println("id after merge: " + user.getId());
+
+        System.out.println(userService.findById(1));
+
+        user.setEmail("pp@mail.com");
+        userService.saveOrUpdate(user);
+
+        System.out.println(userService.findById(1));
+
+
+        User user2 = new User ();
+        user2.setName("Roger");
+        user2.setEmail("rr@mail.com");
+
+        userService.save(user2);
 
 
 
-        em.close();
-
-        emf.close();
     }
 }
