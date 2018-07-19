@@ -1,10 +1,9 @@
 package manytomany;
 
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
+import java.util.List;
 
 public class ManyToMany {
     public static void main(String[] args) {
@@ -20,26 +19,19 @@ public class ManyToMany {
         user2.setUsername("tone");
         user2.setPassword("academia2");
 
-        User user3 = new User();
-        user3.setUsername("tonecas");
-        user3.setPassword("academia3");
-
-
         SGroup sGroup1 = new SGroup();
-        sGroup1.setName("barbarian");
+        sGroup1.setName("group1");
 
         SGroup sGroup2 = new SGroup();
-        sGroup2.setName("grupo2 coistio");
+        sGroup2.setName("group2");
 
         user1.addSGroup(sGroup1);
         user2.addSGroup(sGroup2);
         user2.addSGroup(sGroup1);
-        user3.addSGroup(sGroup2);
 
         sGroup1.addUser(user2);
         sGroup1.addUser(user1);
         sGroup2.addUser(user2);
-        sGroup2.addUser(user3);
 
         EntityManager em = emf.createEntityManager();
 
@@ -50,29 +42,24 @@ public class ManyToMany {
 
 
         EntityManager em1 = emf.createEntityManager();
-
         em1.getTransaction().begin();
-
         User savedUser = em1.merge(user2);
-
         em1.getTransaction().commit();
         em1.close();
 
 
-        EntityManager em2 = emf.createEntityManager();
+        EntityManager test = emf.createEntityManager();
+        test.getTransaction().begin();
+        User user = test.find(User.class, 2);
+        test.getTransaction().commit();
+        test.close();
 
-        em2.getTransaction().begin();
 
-        User savedUser1 = em2.merge(user3); //////////////
-
-        em2.getTransaction().commit();
-        em2.close();
+        List<SGroup> userGroups = user.getSgroups();
+        SGroup usergroup = userGroups.get(1);
+        System.out.println(usergroup.getName());
 
         emf.close();
 
-        System.out.println();
-
-        System.out.println(user2.getSgroups());
-        System.out.println(sGroup2.getUsers());
     }
 }
