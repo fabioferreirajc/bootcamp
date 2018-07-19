@@ -5,7 +5,7 @@ import javax.persistence.*;
 import javax.persistence.OneToOne;
 
 
-@Entity
+//@Entity
 @Table(name = "car")
 public class Car {
 

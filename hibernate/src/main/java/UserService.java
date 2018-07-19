@@ -8,12 +8,12 @@ public class UserService {
     EntityManagerFactory emf;
 
 
-    public User findById(Integer id) {
+    public User1 findById(Integer id) {
 
         EntityManager em = emf.createEntityManager();
 
         try {
-            return em.find(User.class, id);
+            return em.find(User1.class, id);
         } finally {
             if (em != null) {
                 em.close();
@@ -23,7 +23,7 @@ public class UserService {
     }
 
 
-    public User saveOrUpdate(User user) {
+    public User1 saveOrUpdate(User1 user1) {
 
         EntityManager em = emf.createEntityManager();
 
@@ -31,7 +31,7 @@ public class UserService {
 
             em.getTransaction().begin();
 
-            User savedUser = em.merge(user);
+            User1 savedUser = em.merge(user1);
 
             em.getTransaction().commit();
 
@@ -49,14 +49,14 @@ public class UserService {
         }
     }
 
-    public void save(User user) {
+    public void save(User1 user1) {
 
         EntityManager em = emf.createEntityManager();
 
         try {
 
             em.getTransaction().begin();
-            em.persist(user);
+            em.persist(user1);
             em.getTransaction().commit();
 
         } catch (RollbackException ex) {

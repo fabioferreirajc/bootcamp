@@ -6,7 +6,7 @@ import java.util.Date;
 
 //@Entity
 @Table(name = "user") // model the database user table
-public class User {
+public class User1 {
 
     @Id // models the primary key of the entity
     @GeneratedValue(strategy = GenerationType.IDENTITY)

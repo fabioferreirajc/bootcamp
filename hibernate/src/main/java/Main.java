@@ -10,29 +10,29 @@ public class Main {
         UserService userService = new UserService();
         userService.setEmf(emf);
 
-        User user = new User();
-        user.setName("fabio");
-        user.setEmail("ff@mail.com");
+        User1 user1 = new User1();
+        user1.setName("fabio");
+        user1.setEmail("ff@mail.com");
 
-        System.out.println("id before merge: " + user.getId());
+        System.out.println("id before merge: " + user1.getId());
 
-        userService.save(user);
+        userService.save(user1);
 
-        System.out.println("id after merge: " + user.getId());
-
-        System.out.println(userService.findById(1));
-
-        user.setEmail("pp@mail.com");
-        userService.saveOrUpdate(user);
+        System.out.println("id after merge: " + user1.getId());
 
         System.out.println(userService.findById(1));
 
+        user1.setEmail("pp@mail.com");
+        userService.saveOrUpdate(user1);
 
-        User user2 = new User ();
-        user2.setName("Roger");
-        user2.setEmail("rr@mail.com");
+        System.out.println(userService.findById(1));
 
-        userService.save(user2);
+
+        User1 user12 = new User1();
+        user12.setName("Roger");
+        user12.setEmail("rr@mail.com");
+
+        userService.save(user12);
 
 
 

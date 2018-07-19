@@ -25,36 +25,39 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="association@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="manytomany@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="association@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="manytomany@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="association@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="manytomany@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="association: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="manytomany: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="association@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="manytomany@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="association: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="car: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="manytomany: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="sgroup: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="association@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="manytomany@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="association: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="owner: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="manytomany: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="inheritance@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="manytomany@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="manytomany: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user_sgroup: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -64,64 +67,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OneToOne.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/OneToOne.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="922">
+              <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="onetomany.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/onetomany.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Owner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/Owner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
                 <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#828#829#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car" pinned="false" current-in-tab="false">
-        <entry file="das://f0714904-092c-4ede-bfa4-2a067724307d/schema/association/table/car">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="owner" pinned="false" current-in-tab="false">
-        <entry file="das://f0714904-092c-4ede-bfa4-2a067724307d/schema/association/table/owner">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="SGroup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/SGroup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="660">
+              <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManyToMany.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/ManyToMany.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,15 +151,22 @@
         <option value="$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/AbstractModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/Inheritance.java" />
         <option value="$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/association/onetoone/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/association/onetoone/Owner.java" />
         <option value="$PROJECT_DIR$/src/main/java/association/onetoone/OneToOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/association/onetoone/Owner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/onetomany/onetomany.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/association/onetoone/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/onetomany/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/onetomany/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/onetomany/OnetoMany.java" />
+        <option value="$PROJECT_DIR$/src/main/java/manytomany/SGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/manytomany/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/manytomany/ManyToMany.java" />
       </list>
     </option>
   </component>
@@ -176,10 +186,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="315" />
-    <option name="y" value="23" />
-    <option name="width" value="1337" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="47" />
+    <option name="y" value="32" />
+    <option name="width" value="1796" />
     <option name="height" value="986" />
   </component>
   <component name="ProjectView">
@@ -187,9 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,33 +236,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappedSuperClass" type="462c0819:PsiDirectoryNode" />
+              <item name="manytomany" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hibernate" type="b2602c69:ProjectViewProjectNode" />
               <item name="hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="onetomany" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,12 +268,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="inheritance.mappedSuperClass" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="manytomany" />
+      <recent name="inheritance.mappedSuperClass" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -291,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OneToOne">
+  <component name="RunManager" selected="Application.ManyToMany">
     <configuration name="Inheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inheritance.mappedSuperClass.Inheritance" />
       <module name="hibernate" />
@@ -308,6 +306,17 @@
       <module name="hibernate" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="ManyToMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="manytomany.ManyToMany" />
+      <module name="hibernate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="manytomany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="OneToOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="association.onetoone.OneToOne" />
       <module name="hibernate" />
@@ -315,6 +324,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="association.onetoone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="OnetoMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="onetomany.OnetoMany" />
+      <module name="hibernate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="onetomany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -364,9 +384,13 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Inheritance" />
       <item itemvalue="Application.OneToOne" />
+      <item itemvalue="Application.OnetoMany" />
+      <item itemvalue="Application.ManyToMany" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ManyToMany" />
+        <item itemvalue="Application.OnetoMany" />
         <item itemvalue="Application.OneToOne" />
         <item itemvalue="Application.Inheritance" />
         <item itemvalue="Application.Main" />
@@ -386,33 +410,33 @@
       <workItem from="1531840441748" duration="4653000" />
       <workItem from="1531852372904" duration="54000" />
       <workItem from="1531902321785" duration="12855000" />
-      <workItem from="1531928082597" duration="5795000" />
+      <workItem from="1531928082597" duration="6216000" />
+      <workItem from="1531988967773" duration="19068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23357000" />
+    <option name="totallyTimeSpent" value="42846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="47" y="32" width="1796" height="986" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32935324" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49942988" weight="0.32845894" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005325" side_tool="true" weight="0.32935324" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005701" side_tool="true" weight="0.43869516" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.439801" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49942988" visible="true" weight="0.43869516" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946752" visible="true" weight="0.32935324" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946752" weight="0.37232846" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.3295838" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.25985092" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.14270501" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.25028506" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.15279362" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973261" />
       <window_info id="UI Designer" order="2" />
@@ -424,22 +448,24 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.3295838" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.3295838" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43982002" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.14278075" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295838" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.25721925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43982002" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="5" />
@@ -450,12 +476,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="6" sideWeight="0.5060241" side_tool="true" visible="true" weight="0.25721925" />
       <window_info id="Capture Tool" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.14278075" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295838" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="6" sideWeight="0.5060241" side_tool="true" visible="true" weight="0.25721925" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,79 +489,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="24" selection-start-line="33" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://813c2aed-bea5-4659-96cb-fd7692ffca65/schema/inheritance/table/account">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://813c2aed-bea5-4659-96cb-fd7692ffca65/schema/inheritance/table/customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/inheritance/mappedSuperClass/AbstractModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/User1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
@@ -550,13 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,7 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/User1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
@@ -628,7 +591,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/User1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
@@ -639,13 +602,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ac" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Persistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hibernate.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -692,31 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="24" selection-start-line="33" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,19 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f0714904-092c-4ede-bfa4-2a067724307d/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f0714904-092c-4ede-bfa4-2a067724307d/schema/association/table/car/index/fkmoldp5wcwuenmfhghf8ivc4km">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -758,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,30 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.11.Final/hibernate-core-5.2.11.Final.jar!/org/hibernate/internal/SessionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -822,22 +713,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/Owner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f0714904-092c-4ede-bfa4-2a067724307d/schema/association/table/owner">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Persistence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
@@ -848,13 +734,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/OneToOne.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e6bd6a61-e2b6-486c-8d7d-175060ad731c/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://a35b571b-e0a0-446b-b4bf-e90111b7137c/schema/onetomany/table/product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a35b571b-e0a0-446b-b4bf-e90111b7137c/schema/onetomany/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/Owner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="180">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/onetomany/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/onetomany/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -865,10 +805,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/User1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="128">
+          <caret line="11" column="18" selection-start-line="11" selection-end-line="11" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e6bd6a61-e2b6-486c-8d7d-175060ad731c/schema/manytomany/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e6bd6a61-e2b6-486c-8d7d-175060ad731c/schema/manytomany/table/sgroup">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/onetomany/OnetoMany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/association/onetoone/OneToOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e6bd6a61-e2b6-486c-8d7d-175060ad731c/schema/manytomany/table/user_sgroup">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="922">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/SGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/ManyToMany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

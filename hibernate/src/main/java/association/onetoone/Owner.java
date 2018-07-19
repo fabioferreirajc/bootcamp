@@ -3,7 +3,7 @@ package association.onetoone;
 import javax.persistence.*;
 import javax.persistence.OneToOne;
 
-@Entity
+//@Entity
 @Table(name = "owner")
 
 public class Owner {
