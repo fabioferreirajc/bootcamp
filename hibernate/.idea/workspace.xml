@@ -120,8 +120,8 @@
       <file leaf-file-name="ManyToMany.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/ManyToMany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+            <state relative-caret-position="-283">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -411,15 +411,16 @@
       <workItem from="1531852372904" duration="54000" />
       <workItem from="1531902321785" duration="12855000" />
       <workItem from="1531928082597" duration="6216000" />
-      <workItem from="1531988967773" duration="19068000" />
+      <workItem from="1531988967773" duration="19812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42846000" />
+    <option name="totallyTimeSpent" value="43590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="32" width="1796" height="986" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -430,12 +431,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005701" side_tool="true" weight="0.43869516" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49942988" visible="true" weight="0.43869516" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49942988" weight="0.43869516" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946752" weight="0.37232846" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.25028506" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.25028506" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.15279362" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24973261" />
@@ -924,8 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/manytomany/ManyToMany.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+        <state relative-caret-position="-283">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
