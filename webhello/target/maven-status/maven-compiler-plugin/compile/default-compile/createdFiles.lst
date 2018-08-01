@@ -1,3 +1,2 @@
-HelloWorldServlet.class
-Customer.class
-CustomerServlet.class
+org/academiadecodigo/stormrooters/Customer.class
+org/academiadecodigo/stormrooters/CustomerController.class
