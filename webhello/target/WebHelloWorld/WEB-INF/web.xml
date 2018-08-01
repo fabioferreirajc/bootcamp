@@ -1,0 +1,26 @@
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>hellowordServlet</servlet-name>
+        <servlet-class>HelloWorldServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hellowordServlet</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>customerServlet</servlet-name>
+        <servlet-class>CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>customerServlet</servlet-name>
+        <url-pattern>/customer</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
